@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROGER GARAGE</title>
+    <link rel="stylesheet" href="../estilos/estilos.css">
+</head>
+
+<body>
+    <h1>ROGER GARAGE</h1>
+    <header>
+        <nav class="nav">
+            <ul>
+                <li class="menuNavegador">
+                    <a href="../index.html" class="colorNav">Home</a>
+
+
+                </li>
+                <li class="menuNavegador">
+                    <a href="notas.html" class="colorNav">Galeria</a>
+
+                </li>
+                <li class="menuNavegador">
+                    <a href="nosotros.html" class="colorNav">Nosotros</a>
+
+                </li>
+                <li class="menuNavegador">
+                    <a href="servicios.html" class="colorNav">Servicios</a>
+
+                </li>
+                <li class="menuNavegador">
+                    <a href="contacto.html" class="colorNav">Contacto</a>
+
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <form class="contactoCampos">
+        <label for="name">Ingrese su nombre</label>
+        <input type="text" name="name" /><br>
+        <label for="email">Ingrese su email</label>
+        <input type="text" placeholder="aaaaa@gmail.com" name="email" /><br>
+        <label for="password">Ingrese su Contraseña</label>
+        <input name="usuario" type="password" id="password" /><br>
+        <!-- área de texto -->
+        <label for="observaciones">Observaciones: <br>
+            <textarea></textarea>
+        </label> <br>
+        <!-- Menú desplegable -->
+        <div>
+            <h2>Seleccione su vehiculo.</h2>
+        </div>
+        <select name="talles">
+            <option value="M">MOTOS</option>
+            <option value="A">AUTO</option>
+            <option value="C">CAMIONETA</option>
+            <option value="P">CAMIONES</option>
+        </select>
+
+        <!-- checkbox -->
+        <div>Acepto términos y condiciones</div>
+        <input type="checkbox" name="Acepto" /> <br>
+        <!-- Botones -->
+        <input type="submit" value="Enviar Datos" />
+        <input type="reset" value="Limpiar Datos" />
+        <input type="button" value="Non Action" />
+
+        <h2>Dirigirse a este perfil</h2>
+
+        <a href="https://www.instagram.com/rgrinyeccion/">Instagram</a>
+
+    </form>
+
+    <footer class="footerHome">
+        <section>
+            <div>
+                <h4>Horarios de atencion</h4>
+                <ul>
+                    <strong>
+                        <li class="horarios">Lunes: 8hs - 17hs</li>
+                        <li class="horarios">Martes: 8hs - 17hs</li>
+                        <li class="horarios">Miercoles: 8hs - 17hs</li>
+                        <li class="horarios">Jueves: 8hs - 17hs</li>
+                        <li class="horarios">Viernes: 8hs - 17hs</li>
+                        <li class="horarios">Sabado: 8hs - 13hs</li>
+                        <li class="horarios">Domingo: Cerrado</li>
+                    </strong>
+                </ul>
+            </div>
+        </section>
+        <div class="social">
+            <img src="../imagenes/facebook.jpg" alt="facebook">
+            <img src="../imagenes/instagram.jpg" alt="instagram">
+            <img src="../imagenes/whatsapp.jpg" alt="whatsapp">
+        </div>
+    </footer>
+</body>
+
+</html>
