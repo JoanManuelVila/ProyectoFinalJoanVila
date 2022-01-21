@@ -12,7 +12,6 @@ header {
     height: auto;
     width: 100%;
 }
-
 header nav ul li {
     display: inline-block;
     margin-top: 10px;
@@ -83,6 +82,56 @@ footer {
     gap: 10px;
 }
 
+/*index grid*/
+
+.gridIndex {
+    display: flex;
+    border: 2px solid rgb(230, 177, 64);
+    border-radius: 10px;
+    margin: 10%;
+    padding: 20px;
+    background-color: rgb(230, 177, 64, 0.8);
+    box-shadow: 10px 10px 20px black;
+    font-size: 30px;
+    justify-content: space-evenly;
+    display: flex;
+    
+}
+.gridIndex {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+
+        "imagen1 ph1"
+        "imagen2 ph2"
+        "imagen3 ph3"
+    
+    ;
+
+}
+
+.imagen1 {
+    grid-area: imagen1;
+}
+
+.imagen2 {
+    grid-area: imagen2;
+}
+
+.imagen3 {
+    grid-area: imagen3;
+}
+
+.ph1 {
+    grid-area: ph1;
+}
+.ph2 {
+    grid-area: ph2;
+}
+.ph3 {
+    grid-area: ph3;
+}
 
 
 /*parrafos*/
@@ -94,11 +143,11 @@ footer {
 .nosotros {
     border: 2px solid rgb(230, 177, 64);
     border-radius: 10px;
-    margin: 100px 100px 100px 100px;
-    padding: 15px;
-    background-color: rgb(230, 177, 64);
+    margin: 10%;
+    padding: 20px;
+    background-color: rgb(230, 177, 64, 0.9);
     box-shadow: 10px 10px 20px black;
-    font-size: 40px;
+    font-size: 30px;
     display: flex;
 }
 
@@ -345,6 +394,103 @@ footer {
     }
    
 }
+
+/*responsive Index*/
+
+
+@media only screen and (max-width: 767px) {
+    .bodyIndex{
+        background-color: bisque;
+        background-image: none;
+    }
+
+    
+    .gridIndex {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 6fr ;
+        grid-template-areas: 
+        "imagen1"
+        "ph1"
+        "imagen2"
+        "ph2"
+        "imagen3"
+        "ph3"
+        ;
+    }
+    .imagen1 {
+        margin: auto;
+        width: 95%;
+    }
+    
+    .imagen2 {
+        margin: auto;
+        width: 95%;
+    }
+    
+    .imagen3 {
+        margin: auto;
+        width: 95%;
+    }
+    
+    .ph1 {
+        margin: auto;
+    }
+    
+    .ph2 {
+        margin: auto;
+    }
+    
+    .ph3 {
+        margin: auto;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 970px) {
+
+
+    
+    .gridIndex {
+        display: grid;
+        grid-template-columns: 0.5 fr   1fr;
+        grid-template-rows: 3fr ;
+        grid-template-areas: 
+        "imagen1 ph1"
+        "imagen2 ph2"
+        "imagen3 ph3"
+        ;
+    }
+    .imagen1 {
+        margin: auto;
+        width: 95%;
+    }
+    
+    .imagen2 {
+        margin: auto;
+        width: 95%;
+    }
+    
+    .imagen3 {
+        margin: auto;
+        width: 95%;
+    }
+    
+    .ph1 {
+        margin: auto;
+    }
+    
+    .ph2 {
+        margin: auto;
+    }
+    
+    .ph3 {
+        margin: auto;
+    }
+   
+}
+
+
 
 
 
