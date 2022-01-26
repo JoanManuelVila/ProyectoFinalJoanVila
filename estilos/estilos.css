@@ -28,27 +28,11 @@ h1 {
 
 /*nav*/
 
-.menuNavegador {
-    font-size: 20px;
-    padding: 10px 45px 10px 45px;
-    display: inline-block;
-}
-
-.colorNav:hover {
-    color: rgb(19, 15, 238);
-    transition: all 1s;
+.background { 
+    opacity: 90%;
 }
 
 
-.colorNav {
-    color: aliceblue;
-    text-decoration: none;
-}
-
-.nav {
-    text-align: center;
-    padding: 10px;
-}
 
 /*body*/
 
