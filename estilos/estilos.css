@@ -54,7 +54,7 @@ footer {
 .footerHome {
     background-color: rgba(19, 15, 43, 0.7);
     margin-bottom: 0px;
-    margin-top: 40%;
+    /*margin-top: 40%;*/
     font-size: 15px;
     color: aliceblue;
 }
@@ -66,56 +66,13 @@ footer {
     gap: 10px;
 }
 
-/*index grid*/
+/*index*/
 
-.gridIndex {
-    display: flex;
-    border: 2px solid rgb(230, 177, 64);
-    border-radius: 10px;
-    margin: 10%;
-    padding: 20px;
-    background-color: rgb(230, 177, 64, 0.8);
-    box-shadow: 10px 10px 20px black;
-    font-size: 30px;
-    justify-content: space-evenly;
-    display: flex;
-    
-}
-.gridIndex {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-
-        "imagen1 ph1"
-        "imagen2 ph2"
-        "imagen3 ph3"
-    
-    ;
-
+.car-index {
+    width: 70%;
+   margin: auto;
 }
 
-.imagen1 {
-    grid-area: imagen1;
-}
-
-.imagen2 {
-    grid-area: imagen2;
-}
-
-.imagen3 {
-    grid-area: imagen3;
-}
-
-.ph1 {
-    grid-area: ph1;
-}
-.ph2 {
-    grid-area: ph2;
-}
-.ph3 {
-    grid-area: ph3;
-}
 
 
 /*parrafos*/

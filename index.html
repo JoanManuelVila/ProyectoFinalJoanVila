@@ -13,7 +13,7 @@
 <body class="bodyIndex">
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light background">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html"> <img src="./imagenes/logo2.jpg" alt=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,29 +43,82 @@
           </nav>
     </header>
 
+     <!-- carrousel -->
+     <div class="car-index mt-5">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./imagenes/como-cambiar-pastillas-freno.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/cambio-de-aceite.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/limpieza-de-inyectores.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+     </div>
 
 
-    <section class="gridIndex">
-        <div><img class="imagen1" src="./imagenes/limpieza-de-inyectores.jpg" alt="limpieza-de-inyectores"></div>
-        <div><img class="imagen2" src="./imagenes/como-cambiar-pastillas-freno.jpg" alt="Frenos"></div>
-        <div><img class="imagen3" src="./imagenes/cambio-de-aceite.jpg" alt="cambio-de-aceite"></div>
+     <!-- cards -->
 
-        <p class="ph1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, rerum sit. Natus dignissimos
-            architecto consequatur, accusamus nulla animi ipsam! Rerum qui distinctio, laboriosam earum veritatis
-            excepturi doloribus incidunt consectetur at.
+    <div class="container mt-5 mb-5">
 
-        </p>
-        <p class="ph2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, rerum sit. Natus dignissimos
-            architecto consequatur, accusamus nulla animi ipsam! Rerum qui distinctio, laboriosam earum veritatis
-            excepturi doloribus incidunt consectetur at.
+      <div class="row">
 
-        </p>
-        <p class="ph3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, rerum sit. Natus dignissimos
-            architecto consequatur, accusamus nulla animi ipsam! Rerum qui distinctio, laboriosam earum veritatis
-            excepturi doloribus incidunt consectetur at.
-
-        </p>
-    </section>
+        <div class="col-12 col-md-6 col-xl-3 card">
+          <img src="./imagenes/scaneo.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="./secciones/servicios.html" class="btn btn-primary">Ir a Servicios</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 card">
+          <img src="./imagenes/limpia-inyector.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="./secciones/servicios.html" class="btn btn-primary">Ir a Servicios</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 card">
+          <img src="./imagenes/limpieza-inyectores.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="./secciones/servicios.html" class="btn btn-primary">Ir a Servicios</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 card">
+          <img src="./imagenes/bujia-nueva.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="./secciones/servicios.html" class="btn btn-primary">Ir a Servicios</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="footerHome">
         <!-- falta agregar mapa y linkear logos con las redes -->
