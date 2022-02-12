@@ -1,0 +1,17 @@
+@mixin foot( $backc, $marg, $font, $color) {
+    background-color: $backc;
+    margin-bottom: $marg,;
+    font-size: $font;
+    color: $color;
+    
+}
+
+footer {
+    @include foot (rgba(19, 15, 43, 0.7), 0px, 15px, $colorLetra)
+}
+.social {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0%;
+    gap: 10px;
+}  
