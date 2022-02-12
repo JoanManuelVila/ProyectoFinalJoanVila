@@ -3,20 +3,6 @@
   margin: 0;
 }
 
-header {
-  background-color: rgba(19, 15, 43, 0.7);
-  display: inline-block;
-  margin-top: 0px;
-  height: auto;
-  width: 100%;
-}
-
-header li {
-  display: inline-block;
-  margin-top: 10px;
-  text-align: center;
-}
-
 body {
   background-image: url(../imagenes/custom-garage.jpg);
   background-attachment: fixed;
@@ -30,14 +16,7 @@ footer {
   color: aliceblue;
 }
 
-.footerHome {
-  background-color: rgba(19, 15, 43, 0.7);
-  margin-bottom: 0px;
-  font-size: 15px;
-  color: aliceblue;
-}
-
-.footerHome .social {
+.social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

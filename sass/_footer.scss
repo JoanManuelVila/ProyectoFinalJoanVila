@@ -1,18 +1,17 @@
-footer {
-    background-color: rgba(19, 15, 43, 0.7);
-    margin-bottom: 0px;
-    font-size: 15px;
-    color: aliceblue;
+@mixin foot( $backc, $marg, $font, $color) {
+    background-color: $backc;
+    margin-bottom: $marg,;
+    font-size: $font;
+    color: $color;
+    
 }
-.footerHome {
-    background-color: rgba(19, 15, 43, 0.7);
-    margin-bottom: 0px;
-    font-size: 15px;
-    color: aliceblue;
-        .social {
-            display: flex;
-            justify-content: flex-end;
-            margin: 0%;
-            gap: 10px;
-        }
-    }   
+
+footer {
+    @include foot (rgba(19, 15, 43, 0.7), 0px, 15px, $colorLetra)
+}
+.social {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0%;
+    gap: 10px;
+}  
