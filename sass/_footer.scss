@@ -1,17 +1,31 @@
-@mixin foot( $backc, $marg, $font, $color) {
+@mixin foot($backc, $marg, $font, $color) {
     background-color: $backc;
-    margin-bottom: $marg,;
+    margin-bottom: $marg, ;
     font-size: $font;
     color: $color;
-    
+
 }
 
 footer {
-    @include foot (rgba(19, 15, 43, 0.7), 0px, 15px, $colorLetra)
+    @include foot (rgb(38, 45, 51), 0, 15px, $colorLetra)
 }
-.social {
+
+.footerHome {
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
-    margin: 0%;
-    gap: 10px;
-}  
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+
+    .horario {
+        width: 50%;
+    }
+
+    .social {
+        width: 50%;
+        margin-top: 20px;
+
+        .imgFoot {
+            margin: 20px;
+        }
+    }
+}
