@@ -4,23 +4,33 @@
 }
 
 body {
-  background-image: url(../imagenes/custom-garage.jpg);
+  background-image: url(../imagenes/fondonegro.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
 
 footer {
-  background-color: rgba(19, 15, 43, 0.7);
-  margin-bottom: 0px;
+  background-color: #262d33;
+  margin-bottom: 0;
   font-size: 15px;
   color: aliceblue;
 }
 
-.social {
+.footerHome {
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
-  margin: 0%;
-  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 0px;
+}
+.footerHome .horario {
+  width: 50%;
+}
+.footerHome .social {
+  width: 50%;
+  margin-top: 20px;
+}
+.footerHome .social .imgFoot {
+  margin: 20px;
 }
 
 /*index*/
@@ -55,30 +65,66 @@ footer {
 }
 .galeria .foto1 {
   grid-area: foto1;
+  border-radius: 15px;
+  margin: 5%;
+  padding: 15px;
+  background-color: #262d33;
 }
 .galeria .foto2 {
   grid-area: foto2;
+  border-radius: 15px;
+  margin: 5%;
+  padding: 15px;
+  background-color: #262d33;
 }
 .galeria .foto3 {
   grid-area: foto3;
+  border-radius: 15px;
+  margin: 5%;
+  padding: 15px;
+  background-color: #262d33;
 }
 .galeria .foto4 {
   grid-area: foto4;
+  border-radius: 15px;
+  margin: 5%;
+  padding: 15px;
+  background-color: #262d33;
 }
 .galeria .foto5 {
   grid-area: foto5;
+  border-radius: 15px;
+  margin: 5%;
+  padding: 15px;
+  background-color: #262d33;
 }
 .galeria .foto6 {
   grid-area: foto6;
+  border-radius: 15px;
+  margin: 5%;
+  padding: 15px;
+  background-color: #262d33;
 }
 .galeria .foto7 {
   grid-area: foto7;
+  border-radius: 15px;
+  margin: 5%;
+  padding: 15px;
+  background-color: #262d33;
 }
 .galeria .foto8 {
   grid-area: foto8;
+  border-radius: 15px;
+  margin: 5%;
+  padding: 15px;
+  background-color: #262d33;
 }
 .galeria .foto9 {
   grid-area: foto9;
+  border-radius: 15px;
+  margin: 5%;
+  padding: 15px;
+  background-color: #262d33;
 }
 .galeria .foto1:hover {
   -webkit-transform: scale(1.3);
@@ -129,178 +175,97 @@ footer {
 /*responsive notas*/
 @media only screen and (max-width: 767px) {
   .bodyNotas {
-    background-color: bisque;
-    background-image: none;
+    /*  background-color: bisque;
+    background-image: none;*/
   }
-
-  .galeria {
-    justify-items: center;
+  .bodyNotas .galeria {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 9fr;
     grid-template-areas: "foto1" "foto2" "foto3" "foto4" "foto5" "foto6" "foto7" "foto8" "foto9";
   }
-
-  .foto1 {
-    margin: auto;
+  .bodyNotas .galeria .foto1 {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
   }
-
-  .foto2 {
-    margin: auto;
+  .bodyNotas .galeria .foto2 {
+    width: 75%;
   }
-
-  .foto3 {
-    margin: auto;
+  .bodyNotas .galeria .foto3 {
+    width: 75%;
   }
-
-  .foto4 {
-    margin: auto;
+  .bodyNotas .galeria .foto4 {
+    width: 75%;
   }
-
-  .foto5 {
-    margin: auto;
+  .bodyNotas .galeria .foto5 {
+    width: 75%;
   }
-
-  .foto6 {
-    margin: auto;
+  .bodyNotas .galeria .foto6 {
+    width: 75%;
   }
-
-  .foto7 {
-    margin: auto;
+  .bodyNotas .galeria .foto7 {
+    width: 75%;
   }
-
-  .foto8 {
-    margin: auto;
+  .bodyNotas .galeria .foto8 {
+    width: 75%;
   }
-
-  .foto9 {
-    margin: auto;
+  .bodyNotas .galeria .foto9 {
+    width: 75%;
+  }
+  .bodyNotas .galeria .imgResponsive {
+    text-align: center;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 970px) {
   .bodyNotas {
-    background-color: #1b140a;
-    background-image: none;
+    /* background-color: rgb(27, 20, 10);
+    background-image: none;*/
   }
-
-  .galeria {
+  .bodyNotas .galeria {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 5fr;
     grid-template-areas: "foto1 foto2" "foto3 foto4" "foto5 foto6" "foto7 foto8" "foto9 none";
   }
-
-  .foto1 {
+  .bodyNotas .galeria .foto1 {
     margin: auto;
   }
-
-  .foto2 {
+  .bodyNotas .galeria .foto2 {
     margin: auto;
   }
-
-  .foto3 {
+  .bodyNotas .galeria .foto3 {
     margin: auto;
   }
-
-  .foto4 {
+  .bodyNotas .galeria .foto4 {
     margin: auto;
   }
-
-  .foto5 {
+  .bodyNotas .galeria .foto5 {
     margin: auto;
   }
-
-  .foto6 {
+  .bodyNotas .galeria .foto6 {
     margin: auto;
   }
-
-  .foto7 {
+  .bodyNotas .galeria .foto7 {
     margin: auto;
   }
-
-  .foto8 {
+  .bodyNotas .galeria .foto8 {
     margin: auto;
   }
-
-  .foto9 {
+  .bodyNotas .galeria .foto9 {
     margin: auto;
   }
 }
-/*responsive Index*/
-@media only screen and (max-width: 767px) {
-  .bodyIndex {
-    background-color: bisque;
-    background-image: none;
-  }
-
-  .gridIndex {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 6fr;
-    grid-template-areas: "imagen1" "ph1" "imagen2" "ph2" "imagen3" "ph3";
-  }
-
-  .imagen1 {
-    margin: auto;
-    width: 95%;
-  }
-
-  .imagen2 {
-    margin: auto;
-    width: 95%;
-  }
-
-  .imagen3 {
-    margin: auto;
-    width: 95%;
-  }
-
-  .ph1 {
-    margin: auto;
-  }
-
-  .ph2 {
-    margin: auto;
-  }
-
-  .ph3 {
-    margin: auto;
-  }
+.maps {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
-@media only screen and (min-width: 768px) and (max-width: 970px) {
-  .gridIndex {
-    display: grid;
-    grid-template-columns: 0.5 fr 1fr;
-    grid-template-rows: 3fr;
-    grid-template-areas: "imagen1 ph1" "imagen2 ph2" "imagen3 ph3";
-  }
 
-  .imagen1 {
-    margin: auto;
-    width: 95%;
-  }
-
-  .imagen2 {
-    margin: auto;
-    width: 95%;
-  }
-
-  .imagen3 {
-    margin: auto;
-    width: 95%;
-  }
-
-  .ph1 {
-    margin: auto;
-  }
-
-  .ph2 {
-    margin: auto;
-  }
-
-  .ph3 {
-    margin: auto;
-  }
+.cuestionario {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
