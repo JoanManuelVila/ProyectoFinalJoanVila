@@ -35,21 +35,18 @@ footer {
 
 /*index*/
 .car-index {
-  width: 70%;
+  width: 80%;
   margin: auto;
 }
 
 /*parrafos*/
-.parrafoServicios {
-  background-color: orange;
-}
-
 .nosotros {
-  border: 2px solid #e6b140;
+  border: 2px solid #1d2227;
   border-radius: 10px;
   margin: 10%;
   padding: 20px;
-  background-color: rgba(230, 177, 64, 0.9);
+  background-color: #1d2227;
+  color: aliceblue;
   box-shadow: 10px 10px 20px black;
   font-size: 30px;
   display: flex;
@@ -174,10 +171,17 @@ footer {
 
 /*responsive notas*/
 @media only screen and (max-width: 767px) {
-  .bodyNotas {
-    /*  background-color: bisque;
-    background-image: none;*/
+  .card {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
   }
+
+  .nosotros {
+    font-size: 18px;
+  }
+
   .bodyNotas .galeria {
     display: grid;
     grid-template-columns: 100%;
@@ -218,10 +222,6 @@ footer {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 970px) {
-  .bodyNotas {
-    /* background-color: rgb(27, 20, 10);
-    background-image: none;*/
-  }
   .bodyNotas .galeria {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -266,6 +266,12 @@ footer {
   width: 80%;
   margin: auto;
   margin-top: 20px;
+}
+
+.cardInd {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
