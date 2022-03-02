@@ -1,3 +1,9 @@
+@mixin foot($backc, $marg, $font, $color) {
+    background-color: $backc;
+    margin-bottom: $marg, ;
+    font-size: $font;
+    color: $color;
+}
 * {
     padding: 0;
     margin: 0;
@@ -8,4 +14,7 @@ body {
     background-image: url(../imagenes/fondonegro.jpg);
     background-attachment: fixed;
     background-size: cover;
+        .colorFoot {
+            color: aliceblue;
+        }
 }
